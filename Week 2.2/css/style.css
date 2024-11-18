@@ -1,0 +1,30 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    margin: 15rem;
+}
+
+
+.header{
+    margin-bottom: 5rem;
+}
+
+button{
+    background-color: aqua;
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+

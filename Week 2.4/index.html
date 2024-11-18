@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Clock</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="clock">Loading...</div>
+
+    <div class="controls">
+      <div class="control-group">
+        <label for="timeFormat">Select Time Format:</label>
+        <select id="timeFormat">
+          <option value="12">12-Hour</option>
+          <option value="24">24-Hour</option>
+        </select>
+        <button id="toggleFormat">Toggle Format</button>
+      </div>
+  
+      <div class="control-group alarm-time">
+        <label for="alarmTime">Set Alarm (HH:MM:SS):</label>
+        <input type="time" id="alarmTime" value="12:00:00">
+        <button id="setAlarm">Set Alarm</button>
+      </div>
+  
+      <div id="alarmStatus"></div>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+
+
+
