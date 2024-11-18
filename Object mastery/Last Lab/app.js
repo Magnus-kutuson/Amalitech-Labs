@@ -1,6 +1,4 @@
-// app.js
 
-// Superhero Constructor and Prototype Methods
 function Superhero(name, secretIdentity, powers, weakness) {
     this.name = name;
     this.secretIdentity = secretIdentity;
@@ -29,7 +27,7 @@ function Superhero(name, secretIdentity, powers, weakness) {
     }
   };
   
-  // Create Superhero Instances
+
   const heroes = [
     new Superhero("Spider-Man", "Peter Parker", ["Web shooting", "Wall-crawling", "Spider-sense"], "Lack of self-confidence"),
     new Superhero("Iron Man", "Tony Stark", ["Powered suit", "Genius intellect"], "Alcoholism"),
@@ -39,7 +37,7 @@ function Superhero(name, secretIdentity, powers, weakness) {
     new Superhero("Captain America", "Steve Rogers", ["Super strength", "Shield mastery"], "Lack of advanced combat skills")
   ];
   
-  // Populate the dropdowns with superhero names
+
   const hero1Select = document.getElementById('hero1');
   const hero2Select = document.getElementById('hero2');
   
@@ -55,19 +53,18 @@ function Superhero(name, secretIdentity, powers, weakness) {
     hero2Select.appendChild(option2);
   });
   
-  // Handle Battle Button Click
+
   document.getElementById('battleBtn').addEventListener('click', () => {
     const hero1Name = hero1Select.value;
     const hero2Name = hero2Select.value;
   
-    // Find the selected heroes
+
     const hero1 = heroes.find(hero => hero.name === hero1Name);
     const hero2 = heroes.find(hero => hero.name === hero2Name);
   
-    // Run the battle
+  
     const result = hero1.battle(hero2);
   
-    // Display the result
     document.getElementById('result').textContent = result;
   });
   
