@@ -1,4 +1,3 @@
-// Object Methods and this
 
 const Person={
     name : "Magnus",
@@ -13,22 +12,25 @@ Person.greet()
 
 const anotherPerson = {
     name : "James",
-    age : 36
+    age : 36,
 };
+function info(homeTown, city){
+    console.log(`His name is ${this.name} and he is ${this.age}, he comes from ${homeTown} and lives in ${city}`)
+}
 
 
-console.log(Person.greet.call(anotherPerson));
-console.log(Person.greet.apply(anotherPerson));
+info.call(anotherPerson, "Obuasi", "Accra");
+info.apply(anotherPerson, ["Obuasi", "Accra"]);
 
-const greetperson = Person.greet.bind(anotherPerson)
+const infoPerson = info.bind(anotherPerson, 'Obuasi', 'Accra')
 
-greetperson()
+infoPerson()
 
 
-// Event Handlers and this
 
-let btn = document.getElementById('#new-btn')
-let btn2 = document.getElementById('#new-btn')
+
+let btn = document.getElementById('new-btn')
+let btn2 = document.getElementById('new-btn')
 
 
 btn.addEventListener('click', function handleClick() {  
@@ -41,7 +43,7 @@ btn2.addEventListener('click', handleClick=() =>{
     
 });
 
-// Private Data with closures and this
+
 
 function createCounter() {  
     let count = 0; 
