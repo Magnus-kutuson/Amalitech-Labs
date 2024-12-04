@@ -51,13 +51,11 @@
     margin-top: 5rem;
     border: 1px solid #D6D9E6;
     border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* .container{
-    width: 153px;
-    height: 228px;
-    border: 2px solid blue;
-} */
 
 .sider{
     background: url('/images/desktop-sider.svg') no-repeat center center/cover;
