@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FormsComponent} from './forms/forms.component';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, FormsComponent],
+  imports: [RouterOutlet, HeaderComponent, FormsComponent, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
