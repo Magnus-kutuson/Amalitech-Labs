@@ -1,0 +1,84 @@
+.option-container{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    margin-bottom: 5rem;
+}
+
+.option-header{
+    width: 450px;
+    height: 68px;
+    /* border: 2px solid red; */
+    margin-bottom: 4rem;
+}
+.option-header h1{
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.option-header p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #9699AA;
+    margin-bottom: 3rem;
+}
+
+.option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.plan{
+    width: 138px;
+    height: 160px;
+    border-radius: 8px;
+    border: 1px solid #D6D9E6;
+    padding: 1rem;
+}
+
+.plan img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 2rem;
+}
+
+.plan h2{    
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #022959;
+}
+
+.plan p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #9699AA;
+    margin-bottom: 1rem;
+}
+
+.billing{
+    width: 100%;
+    height: 48px;
+    background-color: #f8f9ff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin: 2rem 0;
+} 
+
+.billing label{
+    font-size: 15px;
+    font-weight: 400;
+    color: #9699AA;
+}
+
+.billing input{
+    width: 20px;
+    height: 20px;
+}
+
+
+
