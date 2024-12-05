@@ -44,7 +44,7 @@
 
 }
 
-.main-container{
+ .main-container{
     width: 940px;
     height: 600px;
     background-color: #fff;
@@ -64,6 +64,7 @@
     height: 568px;
     margin: 1rem 1rem;
     padding: 2rem;
+    cursor: pointer;
 }
 
 .rate {
@@ -81,12 +82,11 @@
 }
 
 .rate-container {
-    /* border: 1px solid red; */
     display: flex;
     align-items: center; 
     gap: 15px;
     margin-bottom: 2rem;
-}
+} 
 
 .text {
     display: flex;
@@ -113,5 +113,5 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* border: 2px solid #000; */
-}
+    
+} 
