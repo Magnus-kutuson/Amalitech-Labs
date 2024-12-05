@@ -8,6 +8,8 @@ export const routes: Routes = [
         children: [
         { path: 'step1', component: FormsComponent, title: 'Your info' },
         { path: 'step2', component: OptionsComponent, title: 'Select plan' },
+        { path: 'step3', component: FormsComponent, title: 'Add-ons' },
+        { path: 'step4', component: FormsComponent, title: 'Summary' },
     ]},
 
 ];
