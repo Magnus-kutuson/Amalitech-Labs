@@ -79,8 +79,8 @@ input:checked + .slider:before {
 }
 
 .plan{
-    /* width: 138px;
-    height: 160px; */
+    width: 138px;
+    height: 160px;
     border-radius: 8px;
     border: 1px solid #D6D9E6;
     padding: 1rem;
@@ -109,6 +109,8 @@ input:checked + .slider:before {
     margin-bottom: 1rem;
 }
 
+
+
 .billing{
     width: 100%;
     height: 48px;
@@ -130,6 +132,36 @@ input:checked + .slider:before {
     width: 20px;
     height: 20px;
 }
-
-
+.next{
+    width: 123px;
+    height: 48px;
+    background-color: #022959;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.buttons{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.back{
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #9699AA;
+    cursor: pointer;
+}
+.selected{
+    width: 138px;
+    height: 160px;
+    background-color: #F8F9FF;
+    border: 1px solid #483EFF;
+    border-radius: 8px;
+}
 

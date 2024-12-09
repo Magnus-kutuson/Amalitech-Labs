@@ -4,7 +4,7 @@
     <p>You have the option of monthly or yearly billing.</p>
     </div>
     <div class="options">
-        <div class="option" *ngFor="let option of options">
+        <div class="option" *ngFor="let option of options" [class.selected]="option.id === selectedPlanId" (click)="selectedPlan(option.id)">
             <div class="plan">
                 <img [src]="option.icon" alt="option-icon">
                 <h2>{{option.plan}}</h2>
@@ -16,10 +16,22 @@
             <label for="billing">Monthly Billing</label>
             <div class="container">   
                 <label class="switch">  
-                    <input type="checkbox" id="theme-toggle">  
+                    <input type="checkbox" id="theme-toggle" class="checkbox">  
                     <span class="slider"></span>  
                 </label>  
             </div>  
             <label for="billing">Yearly Billing</label>
+    </div>
+    <div class="buttons">
+        <a routerLink="/step1"
+        routerLinkActive="activebutton"
+        ariaCurrentWhenActive="page">
+        <button class="back">Go Back</button>
+    </a>
+    <a routerLink="/step3"
+        routerLinkActive="activebutton"
+        ariaCurrentWhenActive="page">
+        <button class="next">Next Step</button>
+    </a>
     </div>
 </div>

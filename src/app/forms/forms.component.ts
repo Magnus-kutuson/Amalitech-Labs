@@ -1,21 +1,24 @@
-import { CommonModule, NgClass, NgIf } from '@angular/common';
-import { Component } from '@angular/core';
+import { CommonModule, NgIf } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule, FormControl, FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { DataService } from '../data.service';
 
+
+
 @Component({
   selector: 'app-forms',
-  imports: [ReactiveFormsModule, CommonModule, NgClass, NgIf, RouterModule],
+  imports: [ReactiveFormsModule, CommonModule, NgIf, RouterModule],
   templateUrl: './forms.component.html',
   styleUrl: './forms.component.css',
   providers: [DataService]
 })
-export class FormsComponent {
+export class FormsComponent implements OnInit {
   userForm : FormGroup;
 
 
-
+  ngOnInit(): void {
+  }
 
   constructor(private fb: FormBuilder, private dataService: DataService) {
     this.userForm = this.fb.group({
@@ -27,11 +30,11 @@ export class FormsComponent {
 
   }
 
-  // saveData(key: string, value: string) {
-  //   this.dataService.setItem('userInfo', (this.userForm.value));
+  saveData(key: string, value: string) {
+    this.dataService.setItem('userInfo', (this.userForm.value));
 
-  //   console.log(this.userForm.value);
-  // }
+    console.log(this.userForm.value);
+  }
 
 
   onSubmit() {
