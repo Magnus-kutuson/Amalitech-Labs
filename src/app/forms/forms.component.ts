@@ -1,24 +1,53 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgClass, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 import { ReactiveFormsModule, FormControl, FormGroup, Validators, FormBuilder } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-forms',
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, NgClass, NgIf, RouterModule],
   templateUrl: './forms.component.html',
-  styleUrl: './forms.component.css'
+  styleUrl: './forms.component.css',
+  providers: [DataService]
 })
 export class FormsComponent {
   userForm : FormGroup;
 
-  constructor(private fb: FormBuilder) {
+
+
+
+  constructor(private fb: FormBuilder, private dataService: DataService) {
     this.userForm = this.fb.group({
       name: new FormControl('', Validators.required),
       email: new FormControl('', [Validators.required, Validators.email]),
       phone: new FormControl('', Validators.required) 
     });
+
+
   }
 
+  // saveData(key: string, value: string) {
+  //   this.dataService.setItem('userInfo', (this.userForm.value));
+
+  //   console.log(this.userForm.value);
+  // }
+
+
+  onSubmit() {
+    if (this.userForm.valid) {
+      console.log(this.userForm.value);
+      this.dataService.setItem('userInfo', (this.userForm.value));
+    } else {
+      console.error('Form is invalid');
+    }
+  }
 }
+
+
+
+  
+
+  
 
 

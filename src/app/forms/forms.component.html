@@ -24,6 +24,11 @@
         </label>
         <input type="text" placeholder="e.g. +1 234 567 890" formControlName="phone" [ngClass]="{'invalid-input': userForm.controls['name'].invalid && (userForm.controls['name'].dirty || userForm.controls['name'].touched)}">
     </div>
-   
+    <router-outlet></router-outlet>
+    <a routerLink="/step2"
+        routerLinkActive="activebutton"
+        ariaCurrentWhenActive="page">
+        <button class="next"  (ngSubmit)="onSubmit()" (click)="onSubmit()">Next Step</button>
+        </a>
 </form>
   

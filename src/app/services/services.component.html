@@ -3,28 +3,12 @@
         <h1>Pick add-ons</h1>
         <p>Add-ons help enhance your gaming experience</p>
     </div>
-    <div class="services">
+    <div class="services" *ngFor="let service of services">
         <input type="checkbox" id="service" name="service" value="service" />
         <div class="service-text">
-            <h4>Online service</h4>
-            <p>Access to multiplayer games</p>
+            <h4>{{service.service}}</h4>
+            <p>{{service.description}}</p>
         </div>
-        <span>+$1/mo</span>
-    </div>
-    <div class="services">
-        <input type="checkbox" id="service" name="service" value="service" />
-        <div class="service-text">
-            <h4> Large storage</h4>
-            <p>Extra 1TB of cloud save</p>
-        </div>
-        <span>+$2/mo</span>
-    </div>
-    <div class="services">
-        <input type="checkbox" id="service" name="service" value="service" />
-        <div class="service-text">
-            <h4>Customizable Profile</h4>
-            <p>Custom theme on your profile</p>
-        </div>
-        <span>+$2/mo</span>
+        <span>{{service.price}}</span>
     </div>
 </div>

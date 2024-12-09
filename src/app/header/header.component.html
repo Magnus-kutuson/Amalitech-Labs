@@ -43,9 +43,10 @@
                 </div>
             </div></a>
         </div>
-        <div class="apps">
-            <router-outlet></router-outlet>
-            <app-button></app-button>
-        </div>
-            
+        <a routerLink="/step1"
+        routerLinkActive="activebutton"
+        ariaCurrentWhenActive="page">
+        <button class="next">Next Step</button>
+        </a>
+        <router-outlet></router-outlet>
 </div>
