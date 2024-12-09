@@ -7,7 +7,8 @@ import { ServicesComponent } from './services/services.component';
 import { SummaryComponent } from './summary/summary.component';
 
 export const routes: Routes = [
-    { path: 'home', component: HomeComponent, title: 'Your info', 
+    { path: 'home', component: HomeComponent },
+    { path: '', component: HeaderComponent, title: 'Your info', 
         children: [
         { path: 'step1', component: FormsComponent, title: 'Your info' },
         { path: 'step2', component: OptionsComponent, title: 'Select plan' },
