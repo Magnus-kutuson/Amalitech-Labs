@@ -96,6 +96,9 @@
     color: #9699AA;
     cursor: pointer;
 }
+.back:hover{
+    color: #022959;
+}
 
 .selected{
     width: 100%;

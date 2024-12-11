@@ -7,8 +7,9 @@ export class DataService {
 
   constructor() { }
 
+
   setItem(key: string, value: string) {
-    localStorage.setItem(key, value);
+    localStorage.setItem(key, JSON.stringify(value));
   }
 
   getItem(key: string) {
@@ -16,6 +17,6 @@ export class DataService {
     if(data){
       return JSON.parse(data);
     }
-    return localStorage.getItem(key);
+    return null;
   }
 }

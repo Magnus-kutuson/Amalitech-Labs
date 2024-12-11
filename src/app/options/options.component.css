@@ -80,7 +80,7 @@ input:checked + .slider:before {
 
 .plan{
     width: 138px;
-    height: 160px;
+    height: 180px;
     border-radius: 8px;
     border: 1px solid #D6D9E6;
     padding: 1rem;
@@ -157,11 +157,19 @@ input:checked + .slider:before {
     color: #9699AA;
     cursor: pointer;
 }
+.back:hover{
+    color: #022959;
+}
 .selected{
     width: 138px;
-    height: 160px;
+    height: 180px;
     background-color: #F8F9FF;
     border: 1px solid #483EFF;
     border-radius: 8px;
 }
 
+.free-offer{
+    font-size: 12px;
+    font-weight: 400;
+    color: #483EFF;
+}

@@ -8,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class SummaryComponent {
 
+
+  setAddOns(addOns: any){
+    this.addOns = addOns;
+  }   
+
+  addOns: any[] = [];
+
+  total: number = 0;
+  
+
 }

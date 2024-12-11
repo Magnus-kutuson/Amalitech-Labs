@@ -18,9 +18,13 @@ export class FormsComponent implements OnInit {
 
 
   ngOnInit(): void {
+    const savedInput = this.dataService.getItem('userInfo');
+    if (savedInput) {
+    this.userForm.patchValue(savedInput);
+  }
   }
 
-  constructor(private fb: FormBuilder, private dataService: DataService) {
+   constructor(private fb: FormBuilder, private dataService: DataService) {
     this.userForm = this.fb.group({
       name: new FormControl('', Validators.required),
       email: new FormControl('', [Validators.required, Validators.email]),
