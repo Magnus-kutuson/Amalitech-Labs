@@ -3,32 +3,59 @@
         <h1>Finishing up</h1>
         <p>Double-check everything looks OK before confirming.</p>
     </div>
-    <div class="summary">
-        <div class="summary-plan">
-            <div class="summary-plan-icon">
-                <img src="/images/icon-arcade.svg" alt="icon-arcade">
+   <div class="summary-content">
+       <div class="plan">
+        <div class="plan-container">
+            <div class="plan-text">
+                <p>Arcade <span>(Monthly)</span></p>
+               </div>
+               <div class="plan-price">
+                <p>$9.90</p>
+               </div>
             </div>
-            <div class="summary-plan-text">
-                <h3>arcade</h3>
-                <p>$9/mo</p>
+           <a routerLink="/step2"
+           routerLinkActive="activebutton"
+           ariaCurrentWhenActive="page">
+           Change
+           </a>
+       </div>
+       <hr style="border: 1px solid #9699AA;" />
+        <div class="service">
+            <div class="service-text">
+                <p>Online service</p>
+            </div>
+            <div class="service-price">
+                <p>+$1.20</p>
             </div>
         </div>
-        <div class="summary-add-ons">
-            <div class="summary-add-on" *ngFor="let addOn of addOns">
-                <div class="summary-add-on-icon">        
-                    <img [src]="addOn.icon" alt="icon-arcade">
-                </div>
-                <div class="summary-add-on-text">
-                    <h3>{{addOn.addOn}}</h3>
-                    <p>{{addOn.price}}</p>
-                </div>
+        <div class="service">
+            <div class="service-text">
+                <p>Larger storage</p>
+            </div>
+            <div class="service-price">
+                <p>+$2.10</p>
             </div>
         </div>
+</div>
+<div class="total-content">
+    <div class="total-text">
+        <p>Total (per month)</p>
     </div>
-    <div class="summary-total">
-        <div class="summary-total-text">
-            <h3>Total (per month)</h3>
-            <p>${{total}}/mo</p>
-        </div>
+    <div class="total-price">
+        <p>$12.10</p>
     </div>
+</div>
+</div>
+
+<div class="buttons">
+    <a routerLink="/step3"
+    routerLinkActive="activebutton"
+    ariaCurrentWhenActive="page">
+    <button class="back">Go Back</button>
+    </a>
+    <a routerLink="/thank-you"
+    routerLinkActive="activebutton"
+    ariaCurrentWhenActive="page">
+    <button class="next">Confirm</button>
+    </a>
 </div>

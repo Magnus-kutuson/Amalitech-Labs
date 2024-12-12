@@ -1,7 +1,7 @@
 .summary-container{
     width: 100%;
     height: 100%;
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
     margin-bottom: 5rem;
 }
 
@@ -24,28 +24,86 @@
     margin-bottom: 2rem;
 }
 
-.summary{
+.summary-content{
     width: 100%;
-    height: 81px;    
+    height: 100%;
     background-color: #F8F9FF;
-    border: 1px solid #483EFF;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border:  #9699AA;
     border-radius: 8px;
 }
-
-.summary h2{
-    margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #022959;  
-}   
-
-.summary p{
-    font-size: 15px;
-    font-weight: 400;
-    color: #9699AA;
-    margin-bottom: 1rem;
+.plan-text{
+    margin-bottom: 0.5rem;
 }
 
+.plan-text p{
+    font-size: 15px;
+    font-weight: 500;
+    color: #022959;
+}   
+
+.plan-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.plan-price{
+    font-size: 16px;
+    font-weight: 700;
+    color: #022959;
+}
+.plan-container a{
+    color: #9699AA;
+    /* cursor: pointer; */
+}
+
+hr{
+    margin-top: 2rem;
+}
+.service{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.service-text{
+    font-size: 15px;
+    /* font-weight: 500; */
+    color: #9699AA;
+}
+.service-price{
+    font-size: 14px;
+    font-weight: 400;
+    color: #022959;
+}
+
+.total-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.total-text{
+    font-size: 15px;
+    font-weight: 500;
+    color: #9699AA;
+}
+.total-price{
+    font-size: 20px;
+    font-weight: 700;
+    color: #483EFF;
+}
+
+
+.next{
+    width: 123px;
+    height: 48px;
+    background-color: #483EFF;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: none;
+}
 .buttons{
     width: 100%;
     height: 48px;
@@ -54,3 +112,16 @@
     align-items: center;
     /* border: 1px solid red; */
 }
+.back{
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #9699AA;
+    cursor: pointer;
+}
+.back:hover{
+    color: #022959;
+}
+
+

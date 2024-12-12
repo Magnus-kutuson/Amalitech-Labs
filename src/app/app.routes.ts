@@ -5,6 +5,7 @@ import { FormsComponent } from './forms/forms.component';
 import { OptionsComponent } from './options/options.component';
 import { ServicesComponent } from './services/services.component';
 import { SummaryComponent } from './summary/summary.component';
+import { FinalPageComponent } from './final-page/final-page.component';
 
 export const routes: Routes = [
     { path: 'home', component: HomeComponent },
@@ -14,6 +15,7 @@ export const routes: Routes = [
         { path: 'step2', component: OptionsComponent, title: 'Select plan' },
         { path: 'step3', component: ServicesComponent, title: 'Add-ons' },
         { path: 'step4', component: SummaryComponent, title: 'Summary' },
+        { path: 'thank-you', component: FinalPageComponent, title: 'Thank you' },
     ]},
 
 ];

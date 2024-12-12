@@ -25,10 +25,10 @@
         <input type="text" placeholder="e.g. +1 234 567 890" formControlName="phone" [class.invalid-input]="userForm.controls['phone'].invalid && (userForm.controls['phone'].dirty || userForm.controls['phone'].touched)">
     </div>
     <router-outlet></router-outlet>
-    <a routerLink="/step2"
-        routerLinkActive="activebutton"
-        ariaCurrentWhenActive="page">
-        <button class="next" (ngSubmit)="onSubmit()" (click)="onSubmit()">Next Step</button>
-        </a>
 </form>
+<a routerLink="/step2"
+routerLinkActive="activebutton"
+ariaCurrentWhenActive="page">
+<button class="next" (ngSubmit)="onSubmit()" (click)="onSubmit()">Next Step</button>
+</a>
   
