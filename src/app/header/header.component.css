@@ -123,3 +123,6 @@ p {
     border-radius: 10px;
     cursor: pointer;
 }
+a{
+    text-decoration: none;
+}

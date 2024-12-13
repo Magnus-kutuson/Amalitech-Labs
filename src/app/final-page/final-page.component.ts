@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './final-page.component.css'
 })
 export class FinalPageComponent {
-
+email: string = "lorem@example.com";
 }
